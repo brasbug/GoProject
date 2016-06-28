@@ -1,0 +1,539 @@
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>程二枫</title>
+</head>
+
+
+<style>
+    body {
+        font-family: Helvetica, arial, sans-serif;
+        font-size: 14px;
+        line-height: 1.6;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: white;
+        padding: 30px; }
+
+    body > *:first-child {
+        margin-top: 0 !important; }
+    body > *:last-child {
+        margin-bottom: 0 !important; }
+
+    a {
+        color: #4183C4; }
+    a.absent {
+        color: #cc0000; }
+    a.anchor {
+        display: block;
+        padding-left: 30px;
+        margin-left: -30px;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0; }
+
+    h1, h2, h3, h4, h5, h6 {
+        margin: 20px 0 10px;
+        padding: 0;
+        font-weight: bold;
+        -webkit-font-smoothing: antialiased;
+        cursor: text;
+        position: relative; }
+
+    h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+        text-decoration: none; }
+
+    h1 tt, h1 code {
+        font-size: inherit; }
+
+    h2 tt, h2 code {
+        font-size: inherit; }
+
+    h3 tt, h3 code {
+        font-size: inherit; }
+
+    h4 tt, h4 code {
+        font-size: inherit; }
+
+    h5 tt, h5 code {
+        font-size: inherit; }
+
+    h6 tt, h6 code {
+        font-size: inherit; }
+
+    h1 {
+        font-size: 28px;
+        color: black; }
+
+    h2 {
+        font-size: 24px;
+        border-bottom: 1px solid #cccccc;
+        color: black; }
+
+    h3 {
+        font-size: 18px; }
+
+    h4 {
+        font-size: 16px; }
+
+    h5 {
+        font-size: 14px; }
+
+    h6 {
+        color: #777777;
+        font-size: 14px; }
+
+    p, blockquote, ul, ol, dl, li, table, pre {
+        margin: 15px 0; }
+
+    hr {
+        background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+        border: 0 none;
+        color: #cccccc;
+        height: 4px;
+        padding: 0;
+    }
+
+    body > h2:first-child {
+        margin-top: 0;
+        padding-top: 0; }
+    body > h1:first-child {
+        margin-top: 0;
+        padding-top: 0; }
+    body > h1:first-child + h2 {
+        margin-top: 0;
+        padding-top: 0; }
+    body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+        margin-top: 0;
+        padding-top: 0; }
+
+    a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+        margin-top: 0;
+        padding-top: 0; }
+
+    h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+        margin-top: 0; }
+
+    li p.first {
+        display: inline-block; }
+    li {
+        margin: 0; }
+    ul, ol {
+        padding-left: 30px; }
+
+    ul :first-child, ol :first-child {
+        margin-top: 0; }
+
+    dl {
+        padding: 0; }
+    dl dt {
+        font-size: 14px;
+        font-weight: bold;
+        font-style: italic;
+        padding: 0;
+        margin: 15px 0 5px; }
+    dl dt:first-child {
+        padding: 0; }
+    dl dt > :first-child {
+        margin-top: 0; }
+    dl dt > :last-child {
+        margin-bottom: 0; }
+    dl dd {
+        margin: 0 0 15px;
+        padding: 0 15px; }
+    dl dd > :first-child {
+        margin-top: 0; }
+    dl dd > :last-child {
+        margin-bottom: 0; }
+
+    blockquote {
+        border-left: 4px solid #dddddd;
+        padding: 0 15px;
+        color: #777777; }
+    blockquote > :first-child {
+        margin-top: 0; }
+    blockquote > :last-child {
+        margin-bottom: 0; }
+
+    table {
+        padding: 0;border-collapse: collapse; }
+    table tr {
+        border-top: 1px solid #cccccc;
+        background-color: white;
+        margin: 0;
+        padding: 0; }
+    table tr:nth-child(2n) {
+        background-color: #f8f8f8; }
+    table tr th {
+        font-weight: bold;
+        border: 1px solid #cccccc;
+        margin: 0;
+        padding: 6px 13px; }
+    table tr td {
+        border: 1px solid #cccccc;
+        margin: 0;
+        padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+        margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+        margin-bottom: 0; }
+
+    img {
+        max-width: 100%; }
+
+    span.frame {
+        display: block;
+        overflow: hidden; }
+    span.frame > span {
+        border: 1px solid #dddddd;
+        display: block;
+        float: left;
+        overflow: hidden;
+        margin: 13px 0 0;
+        padding: 7px;
+        width: auto; }
+    span.frame span img {
+        display: block;
+        float: left; }
+    span.frame span span {
+        clear: both;
+        color: #333333;
+        display: block;
+        padding: 5px 0 0; }
+    span.align-center {
+        display: block;
+        overflow: hidden;
+        clear: both; }
+    span.align-center > span {
+        display: block;
+        overflow: hidden;
+        margin: 13px auto 0;
+        text-align: center; }
+    span.align-center span img {
+        margin: 0 auto;
+        text-align: center; }
+    span.align-right {
+        display: block;
+        overflow: hidden;
+        clear: both; }
+    span.align-right > span {
+        display: block;
+        overflow: hidden;
+        margin: 13px 0 0;
+        text-align: right; }
+    span.align-right span img {
+        margin: 0;
+        text-align: right; }
+    span.float-left {
+        display: block;
+        margin-right: 13px;
+        overflow: hidden;
+        float: left; }
+    span.float-left span {
+        margin: 13px 0 0; }
+    span.float-right {
+        display: block;
+        margin-left: 13px;
+        overflow: hidden;
+        float: right; }
+    span.float-right > span {
+        display: block;
+        overflow: hidden;
+        margin: 13px auto 0;
+        text-align: right; }
+
+    code, tt {
+        margin: 0 2px;
+        padding: 0 5px;
+        white-space: nowrap;
+        border: 1px solid #eaeaea;
+        background-color: #f8f8f8;
+        border-radius: 3px; }
+
+    pre code {
+        margin: 0;
+        padding: 0;
+        white-space: pre;
+        border: none;
+        background: transparent; }
+
+    .highlight pre {
+        background-color: #f8f8f8;
+        border: 1px solid #cccccc;
+        font-size: 13px;
+        line-height: 19px;
+        overflow: auto;
+        padding: 6px 10px;
+        border-radius: 3px; }
+
+    pre {
+        background-color: #f8f8f8;
+        border: 1px solid #cccccc;
+        font-size: 13px;
+        line-height: 19px;
+        overflow: auto;
+        padding: 6px 10px;
+        border-radius: 3px; }
+    pre code, pre tt {
+        background-color: transparent;
+        border: none; }
+
+    sup {
+        font-size: 0.83em;
+        vertical-align: super;
+        line-height: 0;
+    }
+    * {
+        -webkit-print-color-adjust: exact;
+    }
+    @media screen and (min-width: 914px) {
+        body {
+            width: 854px;
+            margin:0 auto;
+        }
+    }
+    @media print {
+        table, pre {
+            page-break-inside: avoid;
+        }
+        pre {
+            word-wrap: break-word;
+        }
+    }
+</style>
+<div class="page">
+
+    <h1 class="page-title">个人简历</h1>
+
+    <h2>综合评价</h2>
+
+    <ul>
+        <li>近4年iOS开发经验,2年的带队经验</li>
+        <li>带过2个团队,第一个团队做的是外包项目,第二个团队做的是公司自营app,</li>
+        <li>对产品，技术架构有一些见解</li>
+        <li>性格开朗，善于沟通交流</li>
+    </ul>
+
+
+    <h2>基本信息</h2>
+
+    <p>姓名: 程二枫</p>
+
+    <p>出生日期: 1987.12.04</p>
+
+    <p>电话: 13761710430</p>
+
+    <p>Email: neverfall@foxmail.com</p>
+
+    <!--<p>博客: <a href="http://blog.flywithme.top">http://blog.flywithme.top</a></p>-->
+
+    <p>Github: <a href="https://github.com/brasbug">https://github.com/brasbug</a></p>
+
+    <h2>教育经历</h2>
+
+    <table>
+        <thead>
+        <tr>
+            <th>时间 </th>
+            <th> 学校 </th>
+            <th> 专业</th>
+            <th> 学历</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>2006.9 - 2010.6 </td>
+            <td> 上海理工大学  </td>
+            <td> 电子信息</td>
+            <td> 本科</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+    <h2>工作经历</h2>
+
+    <table>
+        <thead>
+        <tr>
+            <th>时间 </th>
+            <th> 公司 </th>
+            <th> 职位</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>2010.7 - 2012.6 </td>
+            <td> 上海三鑫科技发展有限公司  </td>
+            <td> 电路工程师</td>
+        </tr>
+        <td>2012.10 - 2013.8 </td>
+        <td> 上海碧华信息技术有限公司  </td>
+        <td> iOS 开发工程师</td>
+        </tr>
+        <tr>
+            <td>2013.9 - 2014.9 </td>
+            <td> 上海付费通企业服务有限公司  </td>
+            <td> iOS 高级开发工程师</td>
+        </tr>
+        <tr>
+        <tr>
+            <td>2014.9 - 2015.9 </td>
+            <td> 上海奢圈网络科技有限公司 </td>
+            <td> iOS R&D teamleader </td>
+        </tr>
+
+
+        <tr>
+            <td>2015.9 - 至今 </td>
+            <td> 大众点评网  </td>
+            <td> iOS R&D teamleader</td>
+        </tr>
+
+
+        </tbody>
+    </table>
+
+    <h4>2010.7 - 2012.6/上海三鑫科技发展有限公司</h4>
+
+    <p>职位：电路工程师</p>
+
+    <p>职责</p>
+
+    <ul>
+        <li>电路板故障分析</li>
+    </ul>
+
+    <h4>2012.10 - 2013.8/上海碧华信息技术有限公司</h4>
+
+    <p>职位：iOS开发工程师</p>
+
+    <p>职责</p>
+
+    <ul>
+        <li>客户需求分享,业务流程设计</li>
+        <li>UE设计</li>
+        <li>前后端接口设计</li>
+        <li>iOS 框架搭建及开发</li>
+    </ul>
+
+    <h4>2013.9 - 2014.9/上海付费通企业服务有限公司</h4>
+
+    <p>职位：iOS 高级开发工程师</p>
+
+    <p>职责</p>
+
+    <ul>
+        <li>iOS 项目框架搭建,开发及优化</li>
+        <li>控件模块化,业务模块化</li>
+    </ul>
+
+
+    <h4>2014.9 - 2015.9/上海奢圈网络科技有限公司</h4>
+
+    <p>职位：iOS R&D teamleader </p>
+
+    <p>职责</p>
+
+    <ul>
+        <li>iOS 项目框架搭建,开发及优化</li>
+        <li>数据模型化.</li>
+        <li>团队任务分配,技术分享,新人培训</li>
+    </ul>
+
+
+    <h4>2015.9 - 至今/大众点评网</h4>
+
+    <p>职位：iOS R&D </p>
+
+    <p>职责</p>
+
+    <ul>
+        <li>基础控件编写</li>
+        <li>现有代码架构优化</li>
+        <li>控件模块化,探索新技术实现. </li>
+    </ul>
+
+    <h2>项目经历</h2>
+
+    <h4>2012.6 至 2013.8</h4>
+
+    <p>四达法律顾问:已下架 (个人外包)  </p>
+    <ul>
+        <li>项目描述:针对有法律援助需求的用户开发,用户发布问题咨询,刚兴趣的律师可以针对该问题进行回复.</li>
+        <li>技术实现:使用http协议请求网络数据,更新本地UI,实现类似论坛回复形式页面.</li>
+        <li>责任描述:一个人完成全部功能.</li>
+    </ul>
+
+    <p>婚礼手记:当时未上架 (个人外包) </p>
+    <ul>
+        <li>项目描述:针对婚礼进行时开发的APP,扫描二维码参加婚礼.婚礼开始前后,来宾可以使用本软件上传新人日常照片,婚礼进行时和之后的照片和视频并分享心得.</li>
+        <li>技术实现:使用http协议请求网络数据,数据本地存储,缓存清理,二维码生产和扫描识别,瀑布流展示,视频流播放</li>
+        <li>责任描述:一个人完成全部功能.</li>
+    </ul>
+
+    <p>优柯人才网  </p>
+    <ul>
+        <li>地址: <a href="https://itunes.apple.com/cn/app/you-ke-ren-cai-wang/id713448721?mt=8">https://itunes.apple.com/cn/app/you-ke-ren-cai-wang/id713448721?mt=8</a></li>
+        <li>项目描述:针对求职者开发的一款招聘APP,可以帮助用户快速搜索最新职位,并可以收藏和申请,简历被浏览记录查询,面试提醒,智能推荐,我的简历更新等等.</li>
+        <li>技术实现:使用http协议请求网络数据,json数据模型化,更新本地UI,本地定时通知,分享等.</li>
+        <li>责任描述:一个人完成全部功能.</li>
+    </ul>
+    <p>易寻宝</p>
+    <ul>
+        <li>地址: <a href="https://itunes.apple.com/cn/app/yi-xun-bao/id802627616?mt=8">https://itunes.apple.com/cn/app/yi-xun-bao/id802627616?mt=8</a></li>
+        <li>项目描述:为了方便实物寻回失物而开发的APP.丢东西的用户可以使用本app发布报失信息,发布成功之后,信息会进入失物列表中,捡到的人如果在失物列表中发现报失信息即可通知失主,如果没有报失信息,即可发布招领信息,等待失主来寻回.平台亦可以发布寻人,寻宠启示.</li>
+        <li>技术实现:使用http协议请求网络数据,数据本地存储,实时推送服务.</li>
+        <li>责任描述:一个人完成全部功能.</li>
+    </ul>
+
+
+    <h4>2013.9 至 2014.9</h4>
+
+    <p>包租婆</p>
+    <ul>
+        <li>地址: <a href="https://itunes.apple.com/cn/app/bao-zu-po/id783485041?mt=8">https://itunes.apple.com/cn/app/bao-zu-po/id783485041?mt=8</a></li>
+        <li>项目描述:为房东/自住/房客提供房屋租住,账单管理服务,添加租住的房屋之后可以完成水电煤缴费,房租支付,可以使用银联信用卡支付.</li>
+        <li>技术实现:使用http协议请求网络数据,银联支付,实时更新账户状态.</li>
+        <li>责任描述:一个人完成全部功能.</li>
+    </ul>
+
+    <p>付费通</p>
+    <ul>
+        <li>地址: <a href="https://itunes.apple.com/cn/app/fu-fei-tong/id453673730?mt=8">https://itunes.apple.com/cn/app/fu-fei-tong/id453673730?mt=8</a></li>
+        <li>项目描述:公共事业缴费APP,可以缴纳水电煤宽带固话有线电视,手机账单,可以查询物业费,公积金养老金查询等.</li>
+        <li>技术实现:使用http协议请求网络数据,银联支付.</li>
+        <li>责任描述:水电煤查询页面,手机充值.二维码扫描</li>
+    </ul>
+
+    <h4>2014.9 至 2014.9</h4>
+    <p>奢圈</p>
+    <ul>
+        <li>地址: <a href="https://itunes.apple.com/cn/app/she-quan-jiao-you-yue-hui/id790034407?mt=8">https://itunes.apple.com/cn/app/she-quan-jiao-you-yue-hui/id790034407?mt=8</a></li>
+        <li>项目描述:奢圈是一个针对特定人群的一个社交应用,主推高品质社交圈.</li>
+        <li>技术实现:使用http协议请求网络数据,第三方支付,分享,即时通讯使用的第三方,2.0版本个人资料页面使用hybrid实现,3.0改回native,Coredata,数据模型化处理.实时推送,绘图</li>
+        <li>责任描述:iOS teamleader,任务分配,接口设计,基础框架搭建,朋友圈,聊天页面实现,数据模型设计,codeReview,新人培训.</li>
+    </ul>
+
+    <h4>2015.9 至今</h4>
+    <p>点评管家</p>
+    <ul>
+        <li>地址: <a href="https://itunes.apple.com/cn/app/dian-ping-guan-jia-da-zhong/id793755894?mt=8">https://itunes.apple.com/cn/app/dian-ping-guan-jia-da-zhong/id793755894?mt=8</a></li>
+        <li>项目描述:点评管家是大众点评网推出的移动端商户后台,帮助商家验证团购券,回应用户评价,便捷管理线上门店,查看经营与财务记录.主要功能团购,口碑管理,生意经,同业排名,生意罗盘,门店相册管理</li>
+        <li>技术点:刚开始使用宙斯hybr框架实现大部分页面,现在正在nativ化,网咯请求及返回数据全部模型化处理,首页模块展示根据后台数据更新,控件模块化等等,页面跳转入口单一化.</li>
+        <li>责任描述:基础控件编写,旧控件优化,codeReview,技术分享,业务模块拆分到Pod </li>
+    </ul>
+
+    <p>阿波罗</p>
+    <ul>
+        <li>企业分发(销售使用)</li>
+        <li>项目描述:给点评销售人员使用的app,用于拜访,客户回馈,业务合同签订等</li>
+        <li>技术点:刚开始使用Efte框架(Hybrid)实现大部分页面,部分页面正在nativ化.</li>
+        <li>责任描述:基础控件编写,旧控件优化,codeReview,技术分享,组件拆分到Pod</li>
+    </ul>
+
+
+</div>
