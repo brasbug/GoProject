@@ -63,33 +63,20 @@ func main() {
 
 
 	type postForm1 struct {
-		UserId     string `form:"userid" binding:"required"`
+		Id     string `form:"id" binding:"required"`
 		Page string `form:"page" binding:"required"`
 	}
 
 	router.POST("/post1", func(c *gin.Context) {
-
 		var form postForm1
 		if c.Bind(&form) == nil{
 			c.JSON(200,gin.H{
 				"status":200,
-				"id":form.UserId,
+				"id":form.Id,
 				"page":form.Page,
 			})
 		}
-
-		//id := c.Query("id")
-		//page := c.DefaultQuery("page", "0")
-		//name := c.Query("name")
-		//message := c.PostForm("message")
-		//
-		fmt.Printf("id: %s ", form.UserId)
-		//c.JSON(200, gin.H{
-		//	"status":  "posted",
-		//	"id": id,
-		//	"page":page,
-		//	"name":name,
-		//})
+		fmt.Printf("id: %s ", form.Id)
 	})
 
 	type LoginForm struct {
