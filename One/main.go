@@ -41,6 +41,10 @@ func main() {
 		})
 	})
 
+
+
+
+
 	router.POST("/post", func(c *gin.Context) {
 
 		id := c.Query("postid")
