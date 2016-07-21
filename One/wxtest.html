@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>名片生成器</title>
+    <link type="text/css" rel="stylesheet" href="http://wx.znl.cn/addons/bi_pic/template/mobile/style.css">
+
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript">
+        window.sysinfo = window.sysinfo || {"uniacid":120,"acid":"122","siteroot":"http:\/\/wx.znl.cn\/","siteurl":"http:\/\/wx.znl.cn\/app\/index.php?i=120&c=entry&id=1&do=index&m=bi_pic","attachurl":"http:\/\/wx.znl.cn\/attachment\/","cookie":{"pre":"e2ba_"},"MODULE_URL":"http:\/\/wx.znl.cn\/addons\/bi_pic\/"} || {};
+
+        // jssdk config 对象
+        jssdkconfig = null || {};
+
+        // 是否启用调试
+        jssdkconfig.debug = false;
+
+        jssdkconfig.jsApiList = [
+            'checkJsApi',
+            'onMenuShareTimeline',
+            'onMenuShareAppMessage',
+            'onMenuShareQQ',
+            'onMenuShareWeibo',
+            'hideMenuItems',
+            'showMenuItems',
+            'hideAllNonBaseMenuItem',
+            'showAllNonBaseMenuItem',
+            'translateVoice',
+            'startRecord',
+            'stopRecord',
+            'onRecordEnd',
+            'playVoice',
+            'pauseVoice',
+            'stopVoice',
+            'uploadVoice',
+            'downloadVoice',
+            'chooseImage',
+            'previewImage',
+            'uploadImage',
+            'downloadImage',
+            'getNetworkType',
+            'openLocation',
+            'getLocation',
+            'hideOptionMenu',
+            'showOptionMenu',
+            'closeWindow',
+            'scanQRCode',
+            'chooseWXPay',
+            'openProductSpecificView',
+            'addCard',
+            'chooseCard',
+            'openCard'
+        ];
+
+        wx.config(jssdkconfig);
+
+    </script>    <style>
+    body {
+        color: #a6a6a6;
+        font-size: 16px;
+        padding-top: 45px;
+    }
+    h2.title {
+        line-height: 45px;
+        font-size: 20px;
+        color: #000;
+        position: fixed;
+        top: 0;
+        height: 45px;
+        -webkit-box-sizing: border-box;
+        width: 100%;
+        z-index: 9999;
+        background-color: #f8f9fa;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+<h2 class="title ui-border-b">名片生成器</h2>
+<div class="wrapper">
+    <img src="http://wx.znl.cn/attachment/images/120/2016/03/z14s4JmMjj7YmccMHk7MwwM469j9HJ.jpg" width="50%" style="margin:80px 25% 80px 25%;">
+    <div class="ui-form">
+        <form action="http://wx.znl.cn/app/./index.php?i=120&c=entry&id=1&do=result&m=bi_pic" method="POST">
+            <div class="ui-form-item ui-border-b">
+                <label for="#">姓名</label>
+                <input type="text" name="name" placeholder="输入你的姓名">
+            </div>
+            <div class="ui-btn-wrap">
+                <button class="ui-btn-lg ui-btn-danger">确定</button>
+            </div>
+        </form>
+    </div>
+    <div style="text-align: center;"><img src="http://wx.znl.cn/attachment/images/120/2016/03/NRU18c8ZW4mC484R40CR40M9zd4144.jpg" alt=""></div>
+</div>
+<script>
+    var sharedata = {
+        title: '装B神器无人机驾驶证',
+        desc: '快速生成属于您自己的无人机驾驶证！快来试试吧',
+        link: window.location.href,
+        imgUrl: 'http://wx.znl.cn/attachment/images/120/2016/03/z14s4JmMjj7YmccMHk7MwwM469j9HJ.jpg',
+        success: function(){
+        },
+        cancel: function(){
+        }
+    };
+    wx.ready(function () {
+        wx.onMenuShareAppMessage(sharedata);
+        wx.onMenuShareTimeline(sharedata);
+    });
+</script>
+</body>
+</html>
