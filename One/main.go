@@ -64,8 +64,6 @@ func main() {
 		})
 	})
 
-
-
 	type postForm1 struct {
 		Id     string `form:"id" binding:"required"`
 		Page string `form:"page" binding:"required"`
@@ -102,7 +100,5 @@ func main() {
 			}
 		}
 	})
-
-
 	router.Run(":8080") // listen and server on 0.0.0.0:8080
 }
